@@ -11,13 +11,15 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Hello, world!</title>
 </head>
 
 <body>
   <div class="overlay">
+
+    
+<!-- Top Track section -->
     <div class="container-fluid top-track">
       <div class="track-container col-12 top-col">
         <ul class="list-inline text-right top-list">
@@ -43,44 +45,60 @@
         </ul>
       </div>
     </div>
+<!-- End of Top Track section -->
 
-
+<!-- Site section -->
     <div class="container site">
       <header class="header container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <ul class="list-inline header-list">
+              <li class="list-inline-item">
+                <img src="./villaancora-assets/favicon/logo.svg" alt="Logo" class="header-logo"/>
+              </li>
+              <li class="list-inline-item list-item-logo">
+                  <a class="navbar-menu-logo-right" href="#">
+                    <img src="./villaancora-assets/images/menu-bg-sunflower.svg" alt="Logo" />
+                  </a>
+              </li>
+              <li class="list-inline-item nav-list-item">
+        <nav class="navbar navbar-expand-lg bg-faded navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <div class="dropdown">
+                            <a class="nav-link" href="#">O nama <span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu navnar-dropadown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Foto albumi</a>
+                                <a class="dropdown-item" href="#">Video galerija</a>
+                                <a class="dropdown-item" href="#">Prezentacije</a>
+                            </div>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Usluge i sadržaj <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Foto i galerija <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Kalendar <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Kontakt <span class="sr-only">(current)</span></a>
+            </li>
             </ul>
           </div>
         </nav>
-
-
-
+        
       </header>
+
+  <!-- Main container section -->
       <main class="container main-container">
-        <div class="menu-logo-right">
-          <a class="navbar-menu-logo-right" href="#">
-            <img src="./villaancora-assets/images/menu-bg-sunflower.svg" alt="Logo" />
-          </a>
-        </div>
-        <!-- Carousel start -->
+      
+        <!-- Carousel with slides -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -97,12 +115,13 @@
             <div class="carousel-item">
               <img src="/villaancora-assets/images/template-banner3.jpg" />
             </div>
+            <div id="transp">
+                <h1>Najstariji dom za stare u vojvodini</h1>
+                <h3>Proverite zašto je kod nas treće doba, najlepše doba!</h3>
+                <button type="button" class="btn btn-success custom-btn">Usluge i sadržaj</button>
+              </div>
           </div>
-          <div id="transp">
-            <h1>Najstariji dom za stare u vojvodini</h1>
-            <h3>Proverite zašto je kod nas treće doba, najlepše doba!</h3>
-            <button type="button" class="btn btn-success custom-btn">Usluge i sadržaj</button>
-          </div>
+          
 
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -113,14 +132,13 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <!-- Carousel end -->
+        <!-- Carousel with slides end -->
 
         <!-- Middle Section -->
-
         <div class="middle">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-md-6 col-sm-12 middle-left">
+              <div class="col-12 col-md-6 col-sm-5 middle-left">
                 <h1>Vila Ancora, Palić Subotica</h1>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat.
@@ -137,7 +155,7 @@
 
               </div>
 
-              <div class="col-xs-12 col-md-6 col-sm-5 middle-right">
+              <div class="col-12 col-md-6 col-sm-5 middle-right">
                 <div class="fb-page" data-href="https://www.facebook.com/villa.ancora.palic/" data-tabs="timeline"
                   data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
                   data-hide-cover="false" data-show-facepile="true">
@@ -152,9 +170,9 @@
             </div>
           </div>
 
+          <!-- Cards container -->
           <div class="container cards">
             <div class="card-deck">
-
               <div class="card">
                 <div class="card-body text-center">
                   <h1 class="card-text">Prelepi prirodni ambijent doma</h1>
@@ -167,23 +185,18 @@
                   </div>
                 </div>
               </div>
-
-
               <div class="card">
                 <div class="card-body text-center">
                   <h1 class="card-text">Ljubazno osoblje i stručni tim</h1>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates
                     quaerat optio nihil, dolores accusamus fuga, assumenda, provident sapiente placeat
-
+                    perspiciatis commodi porro ut natus
                   </p>
                   <div class="text-left">
                     <button type="button" class="btn btn-success custom-custom-btn">Saznajte više</button>
                   </div>
                 </div>
               </div>
-
-
-
               <div class="card">
                 <div class="card-body text-center">
                   <h1 class="card-text">Savremena medicinska pomoć</h1>
@@ -197,37 +210,32 @@
                 </div>
               </div>
             </div>
-
-
-
           </div>
+          <!-- Enf of Cards container-->
         </div>
-
-
-
-
-
+        <!-- End of Middle section -->
     </div>
+<!-- End of Site section -->
 
-
-
-
-    <!-- Middle Section end -->
-
-    <button type="button" class="btn btn-success custom-btn fb-btn pull-right"><span class="icon"><i
-          class="fab fa-facebook-messenger fa-fw"></i></span>Message
-      Us</button>
-
+    <!-- Facebook-messenger button -->
+    <div class="container">
+      <div class="row">
+        <div class=".col-xl-12 col-lg-12 col-md-9 col-12">
+          <button type="button" class="btn btn-success custom-btn fb-btn pull-right"><span class="icon"><i
+                class="fab fa-facebook-messenger fa-fw"></i></span>Message Us</button>
+        </div>
+      </div>
+    </div>
+    <!-- End of Facebook-messenger button section -->
     </main>
+  <!-- End of Main container section -->
 
     <!-- Footer -->
-
     <footer class="mainfooter" role="contentinfo">
-
       <div class="footer-middle">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 col-9">
               <div class="footer-pad footer-pad-text" id="footer-left">
                 <h4>Ancora Subotica</h4>
                 <address>
@@ -241,7 +249,7 @@
                 </address>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-4 col-9">
               <div class="footer-pad footer-pad-text">
                 <h4>Ancora Subotica</h4>
                 <address>
@@ -255,187 +263,26 @@
                 </address>
               </div>
             </div>
-            <div class="col col-sm-6">
-
+            <div class="col-md-5 col-sm-6 col-12">
               <div class="footer-pad footer-images">
                 <img class="img-fluid" src="/villaancora-assets/images/firma-od-poverenja1.png" alt="">
                 <img class="img-fluid" src="/villaancora-assets/images/bonitetna-ocena2.png" alt="">
                 <img class="img-fluid" src="/villaancora-assets/images/licenca-srbija3.png" alt="">
               </div>
-
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-8 col-sm-6">
+            <div class="col-md-8 col-sm-4 col-12">
               <p class="text-xs-center">Vila Ancora postoji od 1990. godine. Sajt izradila digitalna agencija <u>Studio
                   Present</u></p>
             </div>
           </div>
         </div>
       </div>
-
-
     </footer>
-    <!-- Footer -->
-
+    <!-- Enf of Footer -->
   </div>
-
-
-
-
-
-  <!-- <div class="content">
-    <div class="container-fluid top-track">
-      <div class="col-12 top-col">
-        <ul class="list-inline text-right top-list">
-          <li class="list-inline-item top-list-item number-list-item">
-            <a href="#" class="top-list-link">+381 658422****</a>
-          </li>
-          <li class="list-inline-item top-list-item">
-            <ul class="list-inline text-right lang-list">
-              <li class="list-inline-item lang-list-item">
-                <a href="#" class="lang-list-link lang-list-link--active">Srpski</a>
-              </li>
-              <li class="list-inline-item lang-list-item">
-                <a href="#" class="lang-list-link">Magarorsag</a>
-              </li>
-              <li class="list-inline-item lang-list-item">
-                <a href="#" class="lang-list-link">Deutch</a>
-              </li>
-              <li class="list-inline-item lang-list-item">
-                      <a href="#" class="lang-list-link">English</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container site">
-      <header class="header">
-        <ul class="list-inline header-list">
-          <li class="list-inline-item list-item-logo">
-            <img
-              src="./villaancora-assets/favicon/logo.svg"
-              alt="Logo"
-              class="header-logo"
-            />
-          </li>
-          <li class="list-inline-item nav-list-item">
-              <nav class="navbar navbar-expand-lg">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                          <li class="nav-item">
-                                  <div class="dropdown">
-                                          <a class="nav-link" href="#">O nama <span class="sr-only">(current)</span></a>
-                                          <div class="dropdown-menu navnar-dropadown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item" href="#">Foto albumi</a>
-                                              <a class="dropdown-item" href="#">Video galerija</a>
-                                              <a class="dropdown-item" href="#">Prezentacije</a>
-                                          </div>
-                                  </div>
-                          </li>
-                          <li class="nav-item ">
-                                  <a class="nav-link" href="#">Usluge i sadrzaj <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item ">
-                              <a class="nav-link" href="#">Foto i galerija <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item ">
-                              <a class="nav-link" href="#">Kalendar <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item ">
-                              <a class="nav-link" href="#">Kontakt <span class="sr-only">(current)</span></a>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
-          </li>
-        </ul>
-      </header> -->
-  <!-- <main class="container main-container">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol> 
-          <div class="carousel-inner main-carousel">
-            <div class="carousel-item active">
-              <div class="slide-item">
-                <div class="slide-item-left">
-                  a
-                </div>
-                <div class="slide-item-right">
-                  <h2>Cao</h2>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </main>
-    </div> -->
-
-  <!-- Footer -->
-
-  <!-- <footer class="mainfooter" role="contentinfo">
-
-<div class="footer-middle">
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 col-sm-6">
-      <div class="footer-pad" id="footer-left">
-        <h4>Ancora Subotica</h4>
-        <address>
-              <ul class="list-unstyled">
-                <li>
-                  <u>381 024 551 341</u><br>
-                  <u>Ustanicka 22</u><br>
-                  Serbia<br>
-                </li>
-              </ul>
-        </address>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="footer-pad">
-        <h4>Ancora Subotica</h4>
-        <address>
-              <ul class="list-unstyled">
-                <li>
-                  <u>381 024 551 341</u><br>
-                  <u>Ustanicka 22</u><br>
-                  Serbia<br>
-                </li>
-              </ul>
-        </address>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-6">
-    <div class="footer-pad">
-      <img class="img-fluid" src="/villaancora-assets/images/firma-od-poverenja1.png" alt="">
-      <img class="img-fluid" src="/villaancora-assets/images/bonitetna-ocena2.png" alt="">
-      <img class="img-fluid" src="/villaancora-assets/images/licenca-srbija3.png" alt="">
-    </div>
-  </div>
-</div>
-
-    <div class="row">
-      <div class="col-md-8 col-sm-6">
-        <p class="text-xs-center">Vila Ancora postoji od 1990. godine. Sajt izradila digitalna agencija <a href="#">Studio Present</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
-</footer> -->
-  <!-- Footer -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -448,7 +295,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="./main.js"></script>
 </body>
 
 </html>
