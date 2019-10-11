@@ -677,6 +677,9 @@ footer p {
   .custom-btn {
     margin-right: 0 !important;
   }
+  #transp {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
